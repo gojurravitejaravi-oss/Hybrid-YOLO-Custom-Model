@@ -1,20 +1,18 @@
-#Hybrid AI: YOLOv8 + Custom Transfer Learning
+# Hybrid-YOLO-Custom-Model
 
-### Results
-- YOLOv8n detected: `cat: 0.90 confidence`
-- Custom Model: `Class 0 (CAT) - 99.98% confidence`
-- Inference: 685.5ms
+![Python](https://img.shields.io/badge/Python-3.10-blue)
+![YOLOv8](https://img.shields.io/badge/YOLOv8-nano-green)
+![Accuracy](https://img.shields.io/badge/Custom_Model-99.98%25-success)
 
-### What is Hybrid?
-YOLO finds WHERE the object is (bounding box).
-Custom model says WHAT it is with high accuracy (99.98% vs YOLO's 90%).
+> YOLO finds WHERE, Custom CNN finds WHAT with 99.98% accuracy
 
-### Files
-- `project7.py` - Full code working in Jupyter (no Streamlit)
-- `cat.jpg` - Test image
-- `bus_output.jpg` - YOLO test
+### 🔥 Live Result (Your screenshot)
+- YOLOv8n: `1 cat detected @ 0.90 confidence - 685.5ms`
+- Custom Model (Transfer Learning): `Class 0 CAT - 0.99984 (99.98%)`
+- Hybrid = Detection + High-Accuracy Classification
 
-### How to run
+### 📁 How I did in Jupyter (No Streamlit)
 ```python
-pip install ultralytics tensorflow
-# open project7.py and run cells
+yolo = YOLO("yolov8n.pt")
+custom = load_model("model.h5")
+# YOLO box + Custom classification

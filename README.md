@@ -12,7 +12,7 @@ Custom model says WHAT it is with high accuracy (99.98% vs YOLO's 90%).
 ### Files
 - `project7.py` - Full code working in Jupyter (no Streamlit)
 - `cat.jpg` - Test image
-- `bus_output.jpg` - YOLO Day62 test
+- `bus_output.jpg` - YOLO test
 
 ### How to run
 ```python

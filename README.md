@@ -2,7 +2,7 @@
 
 ### Results
 - YOLOv8n detected: `cat: 0.90 confidence`
-- Custom Model (Day61): `Class 0 (CAT) - 99.98% confidence`
+- Custom Model: `Class 0 (CAT) - 99.98% confidence`
 - Inference: 685.5ms
 
 ### What is Hybrid?

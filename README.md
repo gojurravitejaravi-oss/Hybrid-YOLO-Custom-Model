@@ -17,4 +17,4 @@ Custom model says WHAT it is with high accuracy (99.98% vs YOLO's 90%).
 ### How to run
 ```python
 pip install ultralytics tensorflow
-# open Day63_Jupyter.ipynb and run cells
+# open project7.py and run cells
